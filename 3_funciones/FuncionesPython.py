@@ -1,6 +1,16 @@
 """Una función es un bloque de código reutilizable 
 que realiza una tarea específica.
 """
+"""Una función es código reutilizable.
+ La defines una sola vez, la llamas cuántas veces quieras."""
+# Función sin entrada ni salida
+def saludar():
+    print("¡Hola!")
+
+saludar()  # ¡Hola!
+saludar()  # ¡Hola!
+
+
 
 """ESTRUCTURA BASICA"""
 def nombre_funcion():

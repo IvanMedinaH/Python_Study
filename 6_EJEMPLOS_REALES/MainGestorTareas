@@ -1,0 +1,10 @@
+from GestorTareas import agregar_tarea, listar_tareas, completar_tarea
+
+agregar_tarea("Estudiar Python", "alta")
+agregar_tarea("Hacer ejercicio")
+agregar_tarea("Limpiar casa", "baja")
+
+print(listar_tareas())
+# [{'descripcion': 'Estudiar Python', 'prioridad': 'alta', 'completada': False}, ...]
+
+completar_tarea(0)
