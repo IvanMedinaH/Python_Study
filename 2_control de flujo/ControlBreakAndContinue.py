@@ -1,6 +1,6 @@
 # break - sale del bucle completamente
 for i in range(10):
-    if i == 5:
+    if i == 3:
         break  # Sale cuando i es 5
     print(i)
 # Imprime: 0, 1, 2, 3, 4

@@ -6,25 +6,27 @@ and what operations are allowed with them"""
 a = 10
 b = 3
 
-print(a + b)      # 13 - SUMA
-print(a - b)      # 7  - RESTA
-print(a * b)      # 30 - MULTIPLICACIÓN
-print(a / b)      # 3.333... - DIVISIÓN (resultado float)
-print(a // b)     # 3  - DIVISIÓN ENTERA (sin decimales)
-print(a % b)      # 1  - MÓDULO (residuo de la división)
-print(a ** b)     # 1000 - POTENCIA (elevado a)
-print(-a)         # -10 - NEGACIÓN (cambiar signo)
-print(+a)         # 10 - AFIRMACIÓN (mantener signo)
+print(f"suma {a + b}")      # 13 - SUMA
+print(f"resta {a - b}")      # 7  - RESTA
+print(f"multiplicacion {a * b}")      # 30 - MULTIPLICACIÓN
+print(f"division {a / b}")      # 3.333... - DIVISIÓN (resultado float)
+print(f"Division entera {a // b}")     # 3  - DIVISIÓN ENTERA (sin decimales)
+print(f"Modulo {a % b}")      # 1  - MÓDULO (residuo de la división)
+print(f"Potencia {a ** b}")     # 1000 - POTENCIA (elevado a)
+print(f"Negacion {-a}")         # -10 - NEGACIÓN (cambiar signo)
+print(f"Afirmacion {+a}")         # 10 - AFIRMACIÓN (mantener signo)
 
 """ASSIGNMENT"""
 x = 10           # Asignación simple
 x += 5           # x = x + 5 (suma y asigna)
+print(f"sum {x}")
 x -= 3           # x = x - 3 (resta y asigna)
 x *= 2           # x = x * 2 (multiplica y asigna)
 x /= 4           # x = x / 4 (divide y asigna)
 x //= 2          # x = x // 2 (división entera y asigna)
 x %= 3           # x = x % 3 (módulo y asigna)
 x **= 2          # x = x ** 2 (potencia y asigna)
+x = 10           # Reset to integer for bitwise operations
 x &= 5           # x = x & 5 (AND binario y asigna)
 x |= 5           # x = x | 5 (OR binario y asigna)
 x ^= 5           # x = x ^ 5 (XOR binario y asigna)
@@ -128,8 +130,7 @@ x, *resto = [1, 2, 3, 4, 5]
 print(x)      # 1
 print(resto)  # [2, 3, 4, 5]
 
-# Desempaquetado en diccionarios
-**diccionario = {"nombre": "Juan", "edad": 30}
+# Desempaquetado en diccionarios **diccionario = {"nombre": "Juan", "edad": 30}
 
 """F-STring: are string literals prefixed with f or F that allow expressions
  to be embedded directly inside curly braces {}"""

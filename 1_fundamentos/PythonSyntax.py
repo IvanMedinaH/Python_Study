@@ -16,13 +16,14 @@ peso = 24.50
 cartilla = True
 #lists
 materias= ["español", "matematicas", "biologia", "quimica"]
+print(materias)
 numeros = [1, 2, 3, 4, 5]
 mixta = [1, "texto", 3.14, True]
 vacia = []
 
 #diccionary (key-value pair)
 datos = { "nombre":nombre,"edad":edad, "peso":peso, "cartilla":cartilla}
-
+print(datos)
 #tupla - lista inmutable y ordenada(el orden refiere a que mantiene posicion fija)
 latLong=(1234.1234, 2345.2340)
 rgb = (255,255,255)
@@ -43,14 +44,18 @@ resultado = print("hola")
 
 #range 
 numberRange = range(0,10)
+print(f"this is a range: {numberRange.step}")
 #range using a step
 steppedRange= range(0,20, 2)
+print(f"step in range = {steppedRange.step}")
 
 #bytes binary data
 archivo = bytes([12,24,112,90])
+
 #byteArray
 datos = bytearray(b"Hola")
 datos[0] = 72
+print(datos[1])
 
 #frozen set  - conjunto inmutable 
 colores_fijos = ({"rojo","verde","negro"})
